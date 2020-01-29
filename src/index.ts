@@ -36,10 +36,10 @@ function setEventCallback(regexp: RegExp, regexpNoName: RegExp,
 setEventCallback(eventRegex.commandsRegex.start, eventRegex.commandsRegexNoName.start, (msg) => {
   if (msgTools.isAuthorized(msg) < 0) {
     // msgTools.sendUnauthorizedMessage(bot, msg);
-    msgTools.sendMessage(bot, msg, 'Bot is not usable outside @BhadooCloud group', -1);
+    msgTools.sendMessage(bot, msg, 'Bot is not usable outside Torrent to GD Group\n\nKuloKenci', -1);
   } else {
     msgTools.sendMessage(bot, msg,
-                         'Welcome to @BhadooCloud Group.\n\nVisit https://telegra.ph/Torrent-Drive-Commands-11-05 for updates in Group.',
+                         'Welcome to Torrent to GD Tools Bot.\n\nEnjoy!\nKuloKenci',
                          -1);
   }
 });
