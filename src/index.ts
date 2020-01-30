@@ -604,9 +604,9 @@ function driveUploadCompleteCallback(err: string, gid: string, url: string, file
         var rawurl = constants.INDEX_DOMAIN + fileName ;
       }
       var indexurl = encodeURI(rawurl) ;
-      finalMessage = `GDrive Link: <a href='${url}'>${fileName}</a> (${fileSizeStr}) \n\nDo not Share Direct Link. \n\nTo Share Use: \n\n<a href='${indexurl}'>${fileName}</a>`;
+      finalMessage = `File Name: <a href='${url}'>${fileName}</a>\nSize: ${fileSizeStr}\nDo not Share Direct Link. \n\nTo Share Use: \n<a href='${indexurl}'>${fileName}</a>`;
     } else {
-      finalMessage = `GDrive Link: <a href='${url}'>${fileName}</a> \n\nDo not Share Direct Link. \n\nTo Share Use: \n\n<a href='${indexurl}'>${fileName}</a>`;
+      finalMessage = `File Name: <a href='${url}'>${fileName}</a>\nSize: ${fileSizeStr}\nDo not Share Direct Link. \n\nTo Share Use: \n<a href='${indexurl}'>${fileName}</a>`;
     }
     cleanupDownload(gid, finalMessage, url);
     }
